@@ -1,0 +1,12 @@
+.pointer {
+
+    cursor: pointer;
+}
+
+a.big {
+
+    font-size:40px;
+    font-family: cursive;
+    text-decoration: none;
+}
+

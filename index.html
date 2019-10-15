@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+            <a class="navbar-brand" href="#">
+                <img src="./img/etz logo.jpg" alt="" width="50" height="50">
+            </a>
+            
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto">
+                    <li class="nav-item active">
+                        <a class="big" href="#">CEO DASHBOARD</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <section>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/aa.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <button type="button" class="pointer btn btn-primary " data-toggle="modal" data-target="#loginModal">
+                                    Enter
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- modal section -->
+    <!-- Button trigger modal -->
+  
+    
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+            <h5 class="modal-title w-100" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action=''>
+                    <div class="form-group">
+                        <!-- <label for="email">Email address</label> -->
+                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="password">Password</label> -->
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary btn-block pointer">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+        
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- 
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js//main.js"></script> -->
+    <script>
+
+        $(document).ready(function(){
+
+            
+            
+
+            $('#submit').click(function(){
+
+                var username = $('#username').val();
+                var password = $('#password').val();
+
+                // e.preventDefault();
+
+                if(password=='test1234' && username=="admin@etranzactng.com")
+                {
+                   
+                   window.location.href = "dashboard.html"
+
+                    return false;
+
+                }
+                else
+                {
+                    alert("Incorrect password or username")
+                }
+
+               
+                
+
+            })
+
+        })
+
+    </script>
+
+   
+</body>
+</html>
